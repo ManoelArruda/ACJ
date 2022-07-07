@@ -1,0 +1,50 @@
+.menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_side_menu img{
+  width: auto;
+  height: 105px;
+}
+.ideias{
+  display: none;
+}
+.right_side_menu nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.08rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Manjari', sans-serif;
+  font-weight: bold;
+}
+.right_side_menu nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+/* Animation Menu */
+.right_side_menu nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #0306d5;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.right_side_menu nav ul li a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/* The end animation menu */
