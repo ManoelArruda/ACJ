@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/general.css">
   <link rel="stylesheet" href="/assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/slider.css">
   <link rel="stylesheet" href="/assets/css/media-socials.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap" rel="stylesheet">
   <title>Acampamento Juvenil | São José de Anchieta</title>
 </head>
 <body>
@@ -33,14 +34,14 @@
       </div>
       <div class="menu">
         <div class="left_side_menu">
-          <img src="/assets/images/logo.png" alt="Logo do site." />
+          <a href="index.html"><img src="/assets/images/logo.png" alt="Logo do site." /></a>
         </div>
         <div class="right_side_menu">
           <nav>
             <ul>
               <li><a href="index.html">Home</a> </li>
               <li data-dropdown>
-                <a href="">O Encontro</a>
+                O Encontro
                 <ul class="dropdown-menu">
                   <li><a href="">Decanato</a></li>
                   <li><a href="">Nossa História</a></li>
@@ -54,14 +55,61 @@
               <li><a href="">Contato</a></li>
               <li><a href="">Doação</a></li>
             </ul>
-          </nav>
-          <!-- https://www.facebook.com/acampamento.juvenil.1401 
-              https://www.instagram.com/acampamento.saojosedeanchieta/ 
-              +5521972301986-->        
+          </nav>   
         </div>
       </div>
     </div>
   </header>
-  
+  <section>
+    
+      <div class="slider">
+        <div class="slides">
+          <!-- Radio Buttons -->
+          <input type="radio" name="radio-tn" id="radio1">
+          <input type="radio" name="radio-tn" id="radio2">
+          <input type="radio" name="radio-tn" id="radio3">
+          <input type="radio" name="radio-tn" id="radio4">
+          <!-- Fim Radio Buttons -->
+
+          <!-- Slide images -->
+          <div class="slide first">
+            <img src="/assets/images/Sitio.jpeg" alt="imagem qualquer">
+          </div>
+          <div class="slide">
+            <img src="https://static8.depositphotos.com/1003924/886/i/450/depositphotos_8868243-stock-photo-spectrum-multicolored-eye-macro.jpg" alt="imagem qualquer">
+          </div>
+          <div class="slide">
+            <img src="https://st2.depositphotos.com/1005147/5192/i/450/depositphotos_51926417-stock-photo-hands-holding-the-sun-at.jpg" alt="imagem qualquer">
+          </div>
+          <div class="slide">
+            <img src="https://img.freepik.com/vetores-gratis/abriu-a-imagem-realista-do-livro-magico-com-brilhantes-raios-de-luz-cintilantes-iluminando-paginas-flutuando-bolas-escuras_1284-29035.jpg?w=2000" alt="imagem qualquer">
+          </div>
+          <!-- Fim slide images -->
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        
+        </div>
+        
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+      </div>
+  </section>
+  <section>
+    <div class="container">
+      kdjflasdjflaksj
+      
+    </div>
+  </section>
+  <script src="/assets/js/slider.js"></script>
 </body>
 </html>
