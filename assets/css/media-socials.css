@@ -1,0 +1,14 @@
+.media-socials a img{
+  width: 30px;
+  height: 30px;
+}
+.media-socials{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.media-socials div{
+  margin-top: 5px;
+  padding: 0px 10px;
+}
