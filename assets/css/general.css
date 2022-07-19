@@ -11,6 +11,10 @@ header{
   height: 110px;
   background-color: #228b22;
   border: none;
+  z-index: 1;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 .container{
   border: none;
@@ -19,3 +23,6 @@ header{
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Mobile */
+
