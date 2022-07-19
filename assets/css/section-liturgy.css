@@ -47,3 +47,15 @@
   color: #fff;
   font-weight: bold;
 }
+.tabContent{
+  animation: up 1s;
+}
+@keyframes up {
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+  }
+}

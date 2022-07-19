@@ -1,6 +1,8 @@
 header{
   z-index: 1;
-  position: absolute;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 .menu{
   width: 100%;
