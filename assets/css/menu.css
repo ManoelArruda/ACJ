@@ -116,11 +116,15 @@
 
 @media (max-width: 600px){
 
+  [data-dropdown]{
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
   #nav ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
     font-size: 1.5rem;
+    border: 1px solid rebeccapurple;
   }
   .media-socials{
     display: none;
