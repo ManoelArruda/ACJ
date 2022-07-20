@@ -18,7 +18,7 @@
   <title>Acampamento Juvenil | São José de Anchieta</title>
 </head>
 <body>
-  <header>
+  <header id="header">
     <div class="container">
       <div class="media-socials">
         <div class="facebook">
@@ -37,12 +37,15 @@
         </div>
       </div>
       <div class="menu">
-        <div class="left_side_menu">
-          <a href="index.html"><img src="/assets/images/logo.png" alt="Logo do site." /></a>
-        </div>
-        <div class="right_side_menu">
-          <nav class="menu-horizontal">
-            <ul>
+          <a href="index.html">
+            <img src="/assets/images/logo.png" id="logo" alt="Logo do site." />
+          </a>
+        
+          <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+              <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
               <li><a href="index.html">Home</a> </li>
               <li data-dropdown>
                 O Encontro
@@ -52,7 +55,7 @@
                   <li><a href="">Quem Somos</a></li>
                   <li><a href="">Sobre o Encontro</a></li>
                 </ul>
-              </li>              
+              </li>        
               <li><a href="#schedule">Agenda/Eventos</a></li>
               <li><a href="#liturgy">Liturgia Diária</a></li>
               <li><a href="#gallery">Galeria</a></li>
@@ -60,7 +63,6 @@
               <li><a href="#donation">Doação</a></li>
             </ul>
           </nav>   
-        </div>
       </div>
     </div>
   </header>
@@ -224,5 +226,6 @@
   <script src="/assets/js/scroll-lite.js"></script>
   <script src="/assets/js/slider.js"></script>
   <script src="/assets/js/tab-nav-liturgy.js"></script>
+  <script src="/assets/js/menu-mobile.js"></script>
 </body>
 </html>
