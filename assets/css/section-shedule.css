@@ -50,7 +50,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid red;
 }
 .date-event span{
   font-size: 1rem;
@@ -74,7 +73,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 .info-event{
   display:flex;
@@ -132,7 +130,8 @@
     margin-top: 50px;
   }
   .card-left img{
-    width: 120%;
+    width: 200%;
+    height: 130px;
   }
   .card-right{
     width: 100%;
