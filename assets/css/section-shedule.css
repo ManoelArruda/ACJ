@@ -132,4 +132,15 @@
   .title-event{
     font-size: 1.5rem;
   }
+  .time-event span,
+  .church-event span,
+  .localization-event span{
+    font-size: 1rem;
+  }
+  .time-event img,
+  .church-event img,
+  .localization-event img{
+    height: 20px;
+    width: 20px;
+  }
 }
