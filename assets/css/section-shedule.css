@@ -50,6 +50,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid red;
 }
 .date-event span{
   font-size: 1rem;
@@ -73,6 +74,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 .info-event{
   display:flex;
@@ -88,6 +90,12 @@
   font-size: 2rem;
   color: #333;
   margin-bottom: 15px;
+}
+.localization-event a {
+  text-decoration: none;
+  font-family: 'Manjari', sans-serif;
+  font-size: 1.2rem;
+  color: #64778d;
 }
 .time-event,
 .church-event{
@@ -115,7 +123,7 @@
     margin-left: 5px;
   }
   .card{
-    width: 90%;
+    width: 92%;
     height: 300px;
     flex-direction: column;
   }
@@ -142,6 +150,9 @@
   .localization-event img{
     height: 20px;
     width: 20px;
+  }
+  .date-event{
+    width: 25%;
   }
   .circle{
     width: 80px;
