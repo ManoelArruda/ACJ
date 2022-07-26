@@ -6,7 +6,7 @@
 }
 .slides{
   width: 400%;
-  height: calc(100vh - 55px) ;
+  height: 90vh ;
   display: flex;
 }
 .slides input{
