@@ -1,12 +1,12 @@
 .slider{
   margin: 0;
   width: 100%;
-  height: calc(100vh - 15vh);
+  height: 700px;
   overflow: hidden;
 }
 .slides{
   width: 400%;
-  height: calc(100vh - 15vh);
+  height: 100%;
   display: flex;
 }
 .slides input{
@@ -19,7 +19,7 @@
 }
 .slide img{
   width: 100%;
-  height: calc(100vh - 15vh);
+  height: 700px;
 }
 .manual-navigation{
   position: absolute;
