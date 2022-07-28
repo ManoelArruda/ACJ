@@ -209,25 +209,35 @@
 
   <section id="contact">
     <div class="container">
+      <h2 class="title-section">Contato</h2>
+      <div class="line-title-section"></div>
+      <div class="p-contact">
+        <p>Entre em contato conosco através do formulário abaixo ou através dos nossos canais de comunicação:</p> 
+        </div>
       <div class="content-contact">
-        <h2 class="title-section">Contato</h2>
-        <div class="line-title-section"></div>
-
-        <form action="https://formspree.io/f/xwkyggwq" method="post" autocomplete="on">
-          <label for="nameComplete">Nome Completo:</label>
-          <input type="text" id="nameComplete" name="nameComplete"><br><br>
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required><br><br>
-          <label for="phone">Telefone:</label>
-          <input type="tel" id="phone" name="phone"><br><br>
-          <label for="assunto">Assunto:</label>
-          <input type="text" id="assunto" name="assunto"><br><br>
-         <p> <label for="message">Mensagem:</label></p>
-          <textarea name="message" rows="10" cols="30">
-            The cat was playing in the garden.
-            </textarea>
-          <input type="submit">
-        </form>
+        <div class="contact-left">
+          <div class="middle-comunication">
+            <img src="/assets/images/whatsapp.png" alt="Logo do Whatsapp">
+            <img src="/assets/images/email.png" alt="Ícone de email.">
+          </div>
+        </div>
+        <div class="contact-right">
+          <form id="formulario" action="https://formspree.io/f/xwkyggwq" method="post" autocomplete="on">
+            <label for="nameComplete">Nome Completo:</label>
+            <input type="text" id="nameComplete" name="nameComplete"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto"><br><br>
+           <p> <label for="message">Mensagem:</label></p>
+            <textarea name="message" rows="10" cols="30">
+              The cat was playing in the garden.
+              </textarea>
+            <input type="submit">
+          </form>
+        </div>
       </div>
     </div>
   </section>
