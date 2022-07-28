@@ -14,7 +14,7 @@
   list-style-type: none;
   display: inline-block;
   padding: 10px;
-  font-size: 1.07rem;
+  font-size: 1rem;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Manjari', sans-serif;
@@ -57,8 +57,10 @@
 }
 [data-dropdown]:hover .dropdown-menu{
   display: block;
-  animation: show-up .3s forwards;
+  position: absolute;
+  animation: show-up .8s forwards;
 }
+
 @keyframes show-up{
   from{
     opacity: 0;
@@ -146,7 +148,7 @@
     width: 60%;
     top: 55px;
     right: 0px;
-    background: #4db870;
+    background: #228b22;
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
@@ -191,6 +193,14 @@
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+  [data-dropdown]:hover .dropdown-menu{
+    width: 100%;
+    padding: 10px 0px;
+    position: static;
+  }
+  .dropdown-menu::before{
+    left: 50%;
   }
 }
 
