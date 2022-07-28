@@ -1,4 +1,4 @@
-light green #4db870
+light green #4db870 rgb(77,184,112)
 dark green #228b22
 light blue #91d2d8
 dark blue #15549b
