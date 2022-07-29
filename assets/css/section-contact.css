@@ -26,7 +26,6 @@
   display: flex;
 }
 .middle-comunication img{
-  display: none;
   width: auto;
   height: 200px;
 }
@@ -95,6 +94,18 @@
 @media (max-width: 600px){
   #contact{
     height: 800px;
+  }
+  .middle-comunication{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle-comunication img{
+    height: 100px;
+  }
+  .content-contact{
+    flex-direction: column;  
   }
   .contact-right{
     margin-left: auto;
