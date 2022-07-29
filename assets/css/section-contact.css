@@ -94,7 +94,7 @@
 
 @media (max-width: 600px){
   #contact{
-    height: 900px;
+    height: 910px;
   }
   .middle-comunication{
     width: 100%;
@@ -107,6 +107,9 @@
   }
   .content-contact{
     flex-direction: column;  
+  }
+  #formulario label{
+  margin-left: 10px;
   }
   .contact-right{
     margin-left: auto;
