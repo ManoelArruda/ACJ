@@ -91,13 +91,11 @@
 }
 
 /* Mobile */
-@media (max-width: 410px){
-  #contact{
-    height: 1000px;
-  }
-}
+
 @media (max-width: 600px){
-  
+  #contact{
+    height: 900px;
+  }
   .middle-comunication{
     width: 100%;
     display: flex;
