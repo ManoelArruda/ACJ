@@ -93,6 +93,9 @@
 
 /* Mobile */
 @media (max-width: 600px){
+  #contact{
+    height: 800px;
+  }
   .contact-right{
     margin-left: auto;
     margin-right: auto;
