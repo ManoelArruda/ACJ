@@ -223,15 +223,15 @@
         </div>
         <div class="contact-right">
           <form id="formulario" action="https://formspree.io/f/xwkyggwq" method="post" autocomplete="on">
-            <label for="nameComplete">Nome Completo:</label>
-            <input type="text" id="nameComplete" name="nameComplete"><br><br>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required><br><br>
-            <label for="phone">Telefone:</label>
-            <input type="tel" id="phone" name="phone"><br><br>
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto"><br><br>
-           <p> <label for="message">Mensagem:</label></p>
+            <label for="nameComplete">Nome Completo: *</label>
+            <input type="text" id="nameComplete" name="nameComplete"  placeholder="Digite seu nome" title="Por favor preencha o campo nome"><br><br>
+            <label for="email">Email: *</label>
+            <input type="text" id="email" name="email" required placeholder="Digite seu melhor email" title="Por favor preencha o campo email"><br><br>
+            <label for="phone">Telefone: *</label>
+            <input type="tel" id="phone" name="phone" title="Por favor preencha o campo telefone"><br><br>
+            <label for="assunto">Assunto: *</label>
+            <input type="text" id="assunto" name="assunto" title="Por favor preencha o campo assunto"><br><br>
+           <p> <label for="message">Mensagem: *</label></p>
             <textarea name="message" rows="10" cols="30">
               The cat was playing in the garden.
               </textarea>
