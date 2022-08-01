@@ -16,4 +16,7 @@
     height: 300px;
     width: auto;
   }
+  .content-donation p{
+    font-size: 1.2rem;
+  }
 }
