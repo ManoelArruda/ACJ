@@ -127,7 +127,7 @@
   top: 55px;
   right: 0px;
   background-color: rgba(39,53,65,0.9);
-  transition: 0.5s;
+  transition:  0.5s;
   z-index: 1000;
   height: 0px;
   visibility: hidden;
