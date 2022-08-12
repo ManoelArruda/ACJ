@@ -1,5 +1,8 @@
 #liturgy{
   margin-top: 50px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px 0px #0000002b, 0 0px 2px #0000001f;
+  padding: 30px 0px;
 }
 .content-liturgy{
   width: 100%;
