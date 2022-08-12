@@ -14,8 +14,8 @@ function toggleMenu(event) {
   //  header.style.backgroundColor = '#4db870'
   } else {
     event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-    btnMobile.style.color = '#fff'
-    header.style.backgroundColor = '#228b22'
+    btnMobile.style.color = 'rgb(0, 211, 24)'
+    header.style.backgroundColor = 'rgba(39,53,65,0.9)'
 
   }
 }
