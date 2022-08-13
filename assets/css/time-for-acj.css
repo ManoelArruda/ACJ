@@ -8,8 +8,6 @@
     grid-template-columns: repeat(4, 1fr);
     background-color: rgb(0, 211, 24);
     position: absolute;
-    
-    margin: 0 15%;
   }
   .daysForAcj,
   .minutesForAcj,
