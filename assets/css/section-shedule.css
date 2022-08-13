@@ -12,7 +12,7 @@
 }
 
 .line-title-section{
-  background-color: #228b22;
+  background-color: rgb(0, 211, 24);
   width: 80px;
   height: 5px;
   border-radius: 2px;
@@ -69,10 +69,10 @@
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  color: #15549b;
+  color: rgb(0, 211, 24);
   font-family: 'SF Pro Display Bold';
   font-size: 4rem;
-  background-color: #91d2d8;
+  background-color: #273541;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@
 .title-event{
   font-family: 'Manjari', sans-serif;
   font-size: 2rem;
-  color: #333;
+  color: #273541;
   margin-bottom: 15px;
 }
 .localization-event a {
@@ -113,7 +113,7 @@
 .localization-event span{
   font-family: 'Manjari', sans-serif;
   font-size: 1.2rem;
-  color: #64778d;
+  color: #273541;
   margin-left: 10px;
 }
 /* MOBILE */

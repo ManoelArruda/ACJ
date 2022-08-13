@@ -1,0 +1,28 @@
+/* mobile */
+
+@media (max-width: 600px){
+
+  .timeForAcj{
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(0, 211, 24);
+    position: absolute;
+    
+    margin: 0 15%;
+  }
+  .daysForAcj,
+  .minutesForAcj,
+  .hoursForAcj,
+  .secondsForAcj{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #273541;
+    font-family: 'Manjari', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+}

@@ -5,4 +5,7 @@ dark blue #15549b
 blue menu bottom #0306d5
 border dropdown #333
 
+rgb(0, 211, 24)
+
+#273541 r 39 g 53 b 65 azul escuro
 font family 'Manjari', sans-serif;
