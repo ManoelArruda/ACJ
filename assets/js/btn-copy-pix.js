@@ -10,5 +10,7 @@ function copyPix() {
   navigator.clipboard.writeText(copyPix.value);
   
   /* Alert the copied text */
-  alert("Chave PIX copiada");
+ // alert("Chave PIX copiada");
+ const btnCopyPix = document.getElementById("btnCopyPix");
+btnCopyPix.innerHTML = "Copiado"
 }
