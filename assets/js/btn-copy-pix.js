@@ -1,6 +1,6 @@
 function copyPix() {
   /* Get the text field */
-  var copyPix = document.getElementById("copyPix");
+  const copyPix = document.getElementById("copyPix");
 
   /* Select the text field */
   copyPix.select();
