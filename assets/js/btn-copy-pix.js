@@ -12,5 +12,5 @@ function copyPix() {
   /* Alert the copied text */
  // alert("Chave PIX copiada");
  const btnCopyPix = document.getElementById("btnCopyPix");
-btnCopyPix.innerHTML = "Copiado"
+ btnCopyPix.innerHTML = "Copiado"
 }
