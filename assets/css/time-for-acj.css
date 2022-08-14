@@ -7,7 +7,7 @@
     background: rgba( 255, 255, 255, 0.01 );
     backdrop-filter: blur( 5px );
     -webkit-backdrop-filter: blur( 5px );
-    top: 20%;
+    top: 25%;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
     position: absolute;
@@ -25,6 +25,7 @@
     font-family: 'Manjari', sans-serif;
     font-weight: bold;
     font-size: 3rem;
+    text-shadow: 0.07em 0.05em 0.05em #000000;
   }
   .daysForAcj,
   .hoursForAcj,
@@ -35,6 +36,7 @@
     font-family: 'Manjari', sans-serif;
     font-weight: bold;
     font-size: 1.25rem;
+    text-shadow: 0.1em 0.1em 0.05em #000000;
   }
   .daysForAcj{
     grid-column: 1;
@@ -47,5 +49,23 @@
   }
   .secondsForAcj{
     grid-column: 4;
+  }
+  .faltam, .textAcj{
+    width: 100%;
+    position: absolute;
+    text-shadow: 0.1em 0.1em 0.05em #000;
+        color: rgb(0, 211, 24);
+    padding: 10px;
+    font-family: 'Manjari', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .faltam{
+    top: 15%;
+    text-align: center;
+  }
+  .textAcj{
+    top: 63%;
+    text-align: center;
   }
 }
