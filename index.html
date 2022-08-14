@@ -76,7 +76,7 @@
   <div class="timeForAcj"></div>
   <p class="faltam">Faltam exatamente</p>
   <p class="textAcj">para o próximo ACJ.</p>
-
+  <div class="inscrever"><button class="btnInscrever">Inscrever-se</button></div>
   <section id="schedule">
     <div class="container schedule-content">
       <div data-content-schedule>
@@ -202,8 +202,12 @@
         <h2 class="title-section">Doação</h2>
         <div class="line-title-section"></div>
         <p>Contribua para que possamos continuar com a evangelização dos jovens e para manter a obra de Deus ativa.</p>
-        <img src="/assets/images/pix.png" alt="Logo pix.">
-        <p>Chave Pix: acampamento.saojosedeanchieta@gmail.com</p>
+        <div class="imgPix"><img src="/assets/images/pix.png" alt="Logo pix."></div>
+        <p>Chave Pix:</p>
+        <input type="text" value="acampamento.saojosedeanchieta@gmail.com" readonly id="copyPix">
+        <button onclick="copyPix()">Copiar</button>
+
+        
       </div>
     </div>
   </section>
@@ -221,6 +225,7 @@
   <script src="/assets/js/tab-nav-liturgy.js"></script>
   <script src="/assets/js/menu-mobile.js"></script>
   <script src="/assets/js/contact.js"></script>
+  <script src="/assets/js/btn-copy-pix.js"></script>
   <script type="module" src="/assets/js/script.js"></script>
 </body>
 </html>

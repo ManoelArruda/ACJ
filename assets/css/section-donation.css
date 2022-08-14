@@ -14,11 +14,27 @@
 /* Mobile */
 
 @media (max-width: 600px){
+  .imgPix{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .content-donation img{
-    height: 300px;
-    width: auto;
+    height: 150px;
   }
   .content-donation p{
     font-size: 1rem;
+  }
+  #copyPix{
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    margin-left: 10px;
+    width: 340px;
+    font-family: 'Manjari', sans-serif;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
   }
 }
