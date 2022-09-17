@@ -92,7 +92,7 @@
 
 /* Mobile */
 
-@media (max-width: 720px){
+@media (max-width: 600px){
   #contact{
     height: 910px;
   }
