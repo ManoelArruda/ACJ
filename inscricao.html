@@ -23,6 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/general.css">
   <link rel="stylesheet" href="/assets/css/menu.css">
+  <link rel="stylesheet" href="/assets/css/inscricao.css">
   <title>Inscrição ACJ</title>
 </head>
 <body>
@@ -59,50 +60,80 @@
     </div>
   </header>
   <section>
-    <h1>Formulário de Inscrição</h1>
+    <h1 id="titulo">Formulário de Inscrição</h1>
 
     <form id="formulario" action="" method="post" autocomplete="on">
-      <label for="nameComplete">Nome Completo: *</label>
-      <input type="text" id="nameComplete" name="nameComplete"  placeholder="Digite seu nome completo" title="Por favor preencha o campo nome"><br><br>
+      <label for="nameComplete">Nome Completo:</label>
+      <input type="text" id="nameComplete" name="nameComplete"  placeholder="Digite seu nome completo" title="Por favor preencha o campo nome"><br>
       <label>Sexo:</label>
       <label for="masculino">Masculino</label>
       <input type="radio" name="sexo" id="masculino">
       <label for="feminino">Feminino</label>
-      <input type="radio" name="sexo" id="feminino"><br><br>
+      <input type="radio" name="sexo" id="feminino"><br>
       <label for="dtNascimento">Data de Nascimento:</label>
-      <input type="date" name="dateNascimento" id="dateNascimento"><br><br>
+      <input type="date" name="dateNascimento" id="dateNascimento"><br>
       <label for="idade">Idade</label>
-      <input type="number" name="idade" id="idade"><br><br>
+      <input type="number" name="idade" id="idade"><br>
       <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" /> <a href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label><br />
-        <label>Rua:
-        <input name="rua" type="text" id="rua" size="60" readonly /></label><br />
-        <label>Número:
-        <input name="numero" type="text" id="numero" size="60" /></label><br />
-        <label>Complemento:
-        <input name="complemento" type="text" id="complemento" size="60" /></label><br />
-        <label>Bairro:
-        <input name="bairro" type="text" id="bairro" size="40" readonly /></label><br />
-        <label>Cidade:
-        <input name="cidade" type="text" id="cidade" size="40" readonly /></label><br />
-        <label>Estado:
-        <input name="uf" type="text" id="uf" size="2" readonly /></label><br />
-
+      <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+              onblur="pesquisacep(this.value);" /> <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei meu CEP</a></label><br/>
+      <label>Rua:
+      <input name="rua" type="text" id="rua" size="60" readonly /></label><br />
+      <label>Número:
+      <input name="numero" type="text" id="numero" size="60" /></label><br />
+      <label>Complemento:
+      <input name="complemento" type="text" id="complemento" size="60" /></label><br />
+      <label>Bairro:
+      <input name="bairro" type="text" id="bairro" size="40" readonly /></label><br />
+      <label>Cidade:
+      <input name="cidade" type="text" id="cidade" size="40" readonly /></label><br />
+      <label>Estado:
+      <input name="uf" type="text" id="uf" size="2" readonly /></label><br />
+      <label>Paróquia</label>
+      <select name="paroquia" id="paroquia">
+        <option value="selecionarParoquia" selected>Selecionar Paróquia</option>
+        <option value="raizDaSerra">Raiz da Serra</option>
+        <option value="piabeta">Piabetá</option>
+        <option value="santoAleixo">Santo Aleixo</option>
+        <option value="maua">Mauá</option>
+        <option value="guapimirim">Guapimirim</option>
+        <option value="mage">Magé</option>
+        <option value="novaMarilia">Nova Marília</option>
+        <option value="paradaModelo">Parada Modelo</option>
+        <option value="surui">Suruí</option>
+        <option value="São Sebastião">São Sebastião</option>
+        <option value="santaTerezinha">Santa Terezinha</option>
+        <option value="outraParoquia">Outra Paróquia</option>
+        <input type="text" name="outraParoquia" id="outraParoquia" placeholder="Digite o nome da sua Paróquia aqui." required />
+      </select>
+      <label>Celular 1
+        <input type="tel" name="celular1" id="celular1">
+      </label>
+      <label>Celular 2
+        <input type="tel" name="celular2" id="celular2">
+      </label>
+      <label>Tel de Emergência:</label>
+      <input type="tel" id="phone" name="phone">
+      <label>Nome Contato de Emergência
+        <input type="text" name="nameEmergencia" id="nameEmergencia">
+      </label><br>
       <label for="email">Email: *</label>
-      <input type="text" id="email" name="email" required placeholder="Digite seu melhor email" title="Por favor preencha o campo email"><br><br>
-      <label for="phone">Telefone: *</label>
-      <input type="tel" id="phone" name="phone" title="Por favor preencha o campo telefone" placeholder="(99) 99999-9999"><br><br>
-      <label for="assunto">Assunto: *</label>
-      <input type="text" id="assunto" name="assunto" title="Por favor preencha o campo assunto"><br><br>
-     <p> <label for="message">Mensagem: *</label></p>
-      <textarea name="message" rows="10" cols="30">
-        The cat was playing in the garden.
-        </textarea><br>
+      <input type="text" id="email" name="email" required placeholder="Digite seu melhor email" title="Por favor preencha o campo email"><br>
+      <label>Possui contraindicação médica para realização de atividade física?</label>
+      <label>Sim
+        <input type="radio" name="atividadeFisica" id="radioSim">
+      </label>
+      <label>Não
+        <input type="radio" name="atividadeFisica" id="radioNao">
+      </label><br>
+      <label class="contraindicacao">Se sim, especifique qual contraindicação:
+        <input type="text" name="contraindicacao" id="contraindicacao">
+      </label>
         <button type="submit">Enviar</button>
       </form>
   </section>
   <script src="/assets/js/menu-mobile.js"></script>
   <script src="/assets/js/search-cep.js"></script>
+  <script src="/assets/js/outra-paroquia.js"></script>
 </body>
 </html>
