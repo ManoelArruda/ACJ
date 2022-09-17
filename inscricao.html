@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta property="fb:app_id"          content="397001055831610" />
+  <meta  property="og:image:alt" content="Logo do encontro católico." />
+  <meta name="description" content="Encontro de conversão católico." />
+  <meta name="keywords" content="acampamento, juvenil, acampamento juvenil, igreja, encontro de igreja, conversão, decanato são josé de anchieta, campista, juventude católica, cotólico, oração, perseverança, desafio, vida, radical, acj, magé, são josé de anchieta" />
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:region" content="Brasil" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Acampamento Juvenil | Decanato São José de Anchieta" />
+	<meta property="og:description" content="Um encontro radical para jovens, que vai mudar totalmente sua vida, venha experimentar as maravilhas que Deus tem e pode fazer na sua vida." />
+	<meta property="og:url" content="https://acj.vercel.app" />
+	<meta property="og:site_name" content="Acampamento Juvenil | Decanato São José de Anchieta" />
+  <meta property="og:image" content="https://scontent.fsdu1-1.fna.fbcdn.net/v/t1.18169-9/18920143_107192449881923_1423031017256150365_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFsJkj_vOaLragSpkR7LEZIZcyMHo_a38plzIwej9rfyn2bGWKKb0xIV8y8HkuJw_nZY_oEckDAANLocUCbmaI3&_nc_ohc=XXIxRv1qinUAX8r0h2r&_nc_ht=scontent.fsdu1-1.fna&oh=00_AT8_AlPCfD_PXxWBksUgdKi-Rq6uppgzuyoAV5uaDK3pzQ&oe=63048DCB" />
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/general.css">
+  <link rel="stylesheet" href="/assets/css/menu.css">
+  <title>Inscrição ACJ</title>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="menu">
+          <a href="index.html">
+            <img src="/assets/images/logo.png" id="logo" alt="Logo do site." />
+          </a>
+          <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+              <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+              <li><a href="index.html">Home</a> </li>
+              <li data-dropdown>
+                O Encontro
+                <ul class="dropdown-menu">
+                  <li><a href="">Decanato</a></li>
+                  <li><a href="">Nossa História</a></li>
+                  <li><a href="">Quem Somos</a></li>
+                  <li><a href="">Sobre o Encontro</a></li>
+                </ul>
+              </li>        
+              <li><a href="#schedule">Agenda/Eventos</a></li>
+              <li><a href="#liturgy">Liturgia Diária</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#contact">Contato</a></li>
+              <li><a href="#donation">Doação</a></li>
+              <li><a href="#testimonial">Depoimentos</a></li>
+            </ul>
+          </nav>   
+      </div>
+    </div>
+  </header>
+  <section>
+    <h1>Formulário de Inscrição</h1>
+
+    <form id="formulario" action="" method="post" autocomplete="on">
+      <label for="nameComplete">Nome Completo: *</label>
+      <input type="text" id="nameComplete" name="nameComplete"  placeholder="Digite seu nome completo" title="Por favor preencha o campo nome"><br><br>
+      <label>Sexo:</label>
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="sexo" id="masculino">
+      <label for="feminino">Feminino</label>
+      <input type="radio" name="sexo" id="feminino"><br><br>
+      <label for="dtNascimento">Data de Nascimento:</label>
+      <input type="date" name="dateNascimento" id="dateNascimento"><br><br>
+      <label for="idade">Idade</label>
+      <input type="number" name="idade" id="idade"><br><br>
+      <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+               onblur="pesquisacep(this.value);" /> <a href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a></label><br />
+        <label>Rua:
+        <input name="rua" type="text" id="rua" size="60" readonly /></label><br />
+        <label>Número:
+        <input name="numero" type="text" id="numero" size="60" /></label><br />
+        <label>Complemento:
+        <input name="complemento" type="text" id="complemento" size="60" /></label><br />
+        <label>Bairro:
+        <input name="bairro" type="text" id="bairro" size="40" readonly /></label><br />
+        <label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40" readonly /></label><br />
+        <label>Estado:
+        <input name="uf" type="text" id="uf" size="2" readonly /></label><br />
+
+      <label for="email">Email: *</label>
+      <input type="text" id="email" name="email" required placeholder="Digite seu melhor email" title="Por favor preencha o campo email"><br><br>
+      <label for="phone">Telefone: *</label>
+      <input type="tel" id="phone" name="phone" title="Por favor preencha o campo telefone" placeholder="(99) 99999-9999"><br><br>
+      <label for="assunto">Assunto: *</label>
+      <input type="text" id="assunto" name="assunto" title="Por favor preencha o campo assunto"><br><br>
+     <p> <label for="message">Mensagem: *</label></p>
+      <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea><br>
+        <button type="submit">Enviar</button>
+      </form>
+  </section>
+  <script src="/assets/js/menu-mobile.js"></script>
+  <script src="/assets/js/search-cep.js"></script>
+</body>
+</html>
