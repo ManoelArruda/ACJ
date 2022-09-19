@@ -4,3 +4,9 @@
 #contraindicacao, .contraindicacao{
   display: none;
 }
+#tempoFrequentaIgreja, .tempoFrequentaIgreja{
+  display: none;
+}
+.servicoParoquia, #inputServicoParoquia{
+  display: none;
+}

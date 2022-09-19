@@ -63,32 +63,56 @@
     <h1 id="titulo">Formulário de Inscrição</h1>
 
     <form id="formulario" action="" method="post" autocomplete="on">
-      <label for="nameComplete">Nome Completo:</label>
-      <input type="text" id="nameComplete" name="nameComplete"  placeholder="Digite seu nome completo" title="Por favor preencha o campo nome"><br>
+      <label>Nome Completo:
+        <input type="text" id="nameComplete" name="nameComplete"  placeholder="Digite seu nome completo" title="Por favor preencha o campo nome" /><br>
+      </label>
+      
       <label>Sexo:</label>
-      <label for="masculino">Masculino</label>
-      <input type="radio" name="sexo" id="masculino">
-      <label for="feminino">Feminino</label>
-      <input type="radio" name="sexo" id="feminino"><br>
-      <label for="dtNascimento">Data de Nascimento:</label>
-      <input type="date" name="dateNascimento" id="dateNascimento"><br>
-      <label for="idade">Idade</label>
-      <input type="number" name="idade" id="idade"><br>
+      <label>Masculino
+        <input type="radio" name="sexo" id="masculino" />
+      </label>
+      
+      <label for="feminino">Feminino
+        <input type="radio" name="sexo" id="feminino" /><br>
+      </label>
+      
+      <label>Data de Nascimento:
+        <input type="date" name="dateNascimento" id="dateNascimento"/><br>
+      </label>
+      
+      <label>Idade
+        <input type="number" name="idade" id="idade" /><br>
+      </label>
+      
       <label>Cep:
       <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-              onblur="pesquisacep(this.value);" /> <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei meu CEP</a></label><br/>
+              onblur="pesquisacep(this.value);" /> <a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei meu CEP</a><br>
+      </label>
+
       <label>Rua:
-      <input name="rua" type="text" id="rua" size="60" readonly /></label><br />
+      <input name="rua" type="text" id="rua" size="60" readonly /><br>
+      </label>
+
       <label>Número:
-      <input name="numero" type="text" id="numero" size="60" /></label><br />
+      <input name="numero" type="text" id="numero" size="60" /><br>
+      </label>
+
       <label>Complemento:
-      <input name="complemento" type="text" id="complemento" size="60" /></label><br />
+      <input name="complemento" type="text" id="complemento" size="60" /><br>
+      </label>
+
       <label>Bairro:
-      <input name="bairro" type="text" id="bairro" size="40" readonly /></label><br />
+      <input name="bairro" type="text" id="bairro" size="40" readonly /><br>
+      </label>
+      
       <label>Cidade:
-      <input name="cidade" type="text" id="cidade" size="40" readonly /></label><br />
+      <input name="cidade" type="text" id="cidade" size="40" readonly /><br>
+      </label>
+
       <label>Estado:
-      <input name="uf" type="text" id="uf" size="2" readonly /></label><br />
+      <input name="uf" type="text" id="uf" size="2" readonly /><br>
+      </label>
+
       <label>Paróquia</label>
       <select name="paroquia" id="paroquia">
         <option value="selecionarParoquia" selected>Selecionar Paróquia</option>
@@ -106,34 +130,64 @@
         <option value="outraParoquia">Outra Paróquia</option>
         <input type="text" name="outraParoquia" id="outraParoquia" placeholder="Digite o nome da sua Paróquia aqui." required />
       </select>
+      
       <label>Celular 1
-        <input type="tel" name="celular1" id="celular1">
+        <input type="tel" name="celular1" id="celular1" />
       </label>
+      
       <label>Celular 2
-        <input type="tel" name="celular2" id="celular2">
+        <input type="tel" name="celular2" id="celular2" />
       </label>
-      <label>Tel de Emergência:</label>
-      <input type="tel" id="phone" name="phone">
+      
+      <label>Tel de Emergência:
+        <input type="tel" id="phone" name="phone" />
+      </label>
+      
       <label>Nome Contato de Emergência
-        <input type="text" name="nameEmergencia" id="nameEmergencia">
+        <input type="text" name="nameEmergencia" id="nameEmergencia" />
       </label><br>
-      <label for="email">Email: *</label>
-      <input type="text" id="email" name="email" required placeholder="Digite seu melhor email" title="Por favor preencha o campo email"><br>
+
+      <label for="email">Email:
+        <input type="text" id="email" name="email" required placeholder="Digite seu melhor email" title="Por favor preencha o campo email" /><br>
+      </label>
+      
       <label>Possui contraindicação médica para realização de atividade física?</label>
       <label>Sim
-        <input type="radio" name="atividadeFisica" id="radioSim">
+        <input type="radio" name="atividadeFisica" id="radioSim" />
+      </label>
+
+      <label>Não
+        <input type="radio" name="atividadeFisica" id="radioNao" />
+      </label><br>
+
+      <label class="contraindicacao">Especifique qual contraindicação:
+        <input type="text" name="contraindicacao" id="contraindicacao" /><br>
+      </label>
+      <label>Frequenta a Igreja?</label>
+      <label>Sim
+        <input type="radio" name="frequentaIgreja" id="simIgreja" />
       </label>
       <label>Não
-        <input type="radio" name="atividadeFisica" id="radioNao">
-      </label><br>
-      <label class="contraindicacao">Se sim, especifique qual contraindicação:
-        <input type="text" name="contraindicacao" id="contraindicacao">
+        <input type="radio" name="frequentaIgreja" id="naoIgreja" /><br>
       </label>
-        <button type="submit">Enviar</button>
+      <label class="tempoFrequentaIgreja">À quanto tempo?
+        <input type="text" name="tempoFrequentaIgreja" id="tempoFrequentaIgreja" />
+      </label>
+      <label>Presta serviço na Paróquia?</label>
+      <label>Sim
+        <input type="radio" name="servicoParoquia" id="simServico">
+      </label>
+      <label>Não
+        <input type="radio" name="servicoParoquia" id="naoServico">
+      </label>
+      <label class="servicoParoquia">Qual serviço?
+        <input type="text" name="inputServicoParoquia" id="inputServicoParoquia">
+      </label>
+       <br><br> <button type="submit">Enviar</button>
       </form>
   </section>
   <script src="/assets/js/menu-mobile.js"></script>
   <script src="/assets/js/search-cep.js"></script>
-  <script src="/assets/js/outra-paroquia.js"></script>
+  <script src="/assets/js/page-inscricao.js"></script>
 </body>
 </html>
