@@ -179,12 +179,200 @@
       </label>
       <label>Não
         <input type="radio" name="servicoParoquia" id="naoServico">
-      </label>
+      </label><br>
       <label class="servicoParoquia">Qual serviço?
-        <input type="text" name="inputServicoParoquia" id="inputServicoParoquia">
+        <input type="text" name="inputServicoParoquia" id="inputServicoParoquia" />
       </label>
+      <label>Por que deseja participar do Acampamento Juvenil?
+        <input type="text" name="participarACJ" id="participarACJ" />
+      </label><br>
+      <label>Selecione o tamanho da camisa
+      </label><br>
+
+      <label>P
+        <input type="radio" name="tamanhoCamisa" id="camisaP">
+      </label>
+
+      <label>PP
+        <input type="radio" name="tamanhoCamisa" id="camisaPP">
+      </label>  
+
+      <label>M
+      <input type="radio" name="tamanhoCamisa" id="camisaM">
+      </label>   
+
+      <label> G
+        <input type="radio" name="tamanhoCamisa" id="camisaG">
+      </label>
+
+      <label>GG
+        <input type="radio" name="tamanhoCamisa" id="camisaGG">
+      </label>
+
+      <label>XG
+        <input type="radio" name="tamanhoCamisa" id="camisaXG">
+      </label>
+
+      <label>XXG
+        <input type="radio" name="tamanhoCamisa" id="camisaXXG">
+      </label>
+
+      <label>XXXG
+        <input type="radio" name="tamanhoCamisa" id="camisaXXXG">
+      </label>
+
+      <fieldset>
+        <legend><h1>Ficha Médica</h1></legend>
+        <h2>Apresenta ou já apresentou alguns desses problemas de saúde?</h2>
+        
+        <div>
+          <label>AVC ou Derrame cerebral
+            <input type="checkbox" name="doencas" id="avc">
+          </label>
+        </div>
+        <div>
+          <label>Coma
+          <input type="checkbox" name="doencas" id="coma">
+          </label>
+        </div>
+        <div>
+          <label>Enxaqueca
+          <input type="checkbox" name="doencas" id="enxaqueca">
+          </label>
+        </div>
+        <div>
+          <label>Problema de coagulação
+          <input type="checkbox" name="doencas" id="coagulacao">
+          </label>
+        </div>
+        <div>
+          <label>Bronquite ou asma
+          <input type="checkbox" name="doencas" id="asma">
+          </label>
+        </div>
+        <div>
+          <label>Depressão
+          <input type="checkbox" name="doencas" id="depressao">
+          </label>
+        </div>
+        <div>
+          <label>Hipertensão
+          <input type="checkbox" name="doencas" id="hipertensao">
+          </label>
+        </div>
+        <div>
+          <label>Renal
+          <input type="checkbox" name="doencas" id="renal">
+          </label>
+        </div>
+        <div>
+          <label>Transtorno bipolar
+          <input type="checkbox" name="doencas" id="transtornoBipolar">
+          </label>
+        </div>
+        <div>
+          <label>Sonambulismo
+          <input type="checkbox" name="doencas" id="sonambulismo">
+          </label>
+        </div>
+        <div>
+          <label>Câncer
+          <input type="checkbox" name="doencas" id="cancer">
+          </label>
+        </div>
+        <div>
+          <label>Desmaio
+          <input type="checkbox" name="doencas" id="desmaio">
+          </label>
+        </div>
+        <div>
+          <label>Infarto
+          <input type="checkbox" name="doencas" id="infarto">
+          </label>
+        </div>
+        <div>
+          <label>Convulsão ou Eplepsia
+          <input type="checkbox" name="doencas" id="convulsao">
+          </label>
+        </div>
+        <div>
+          <label>Diates
+          <input type="checkbox" name="doencas" id="diates">
+          </label>
+        </div>
+        <div>
+          <label>Hipoglicimia
+          <input type="checkbox" name="doencas" id="hipoglecimia">
+          </label>
+        </div>
+        <div>
+          <label>Labinritite
+          <input type="checkbox" name="doencas" id="labirintite">
+          </label>
+        </div>
+        <div>
+          <label>Febre Reumática
+          <input type="checkbox" name="doencas" id="febreReumatica">
+          </label>
+        </div>
+        <div>
+          <label>Esquizofrenia
+          <input type="checkbox" name="doencas" id="esquizofrenia">
+          </label>
+        </div>
+        <div>
+          <label>COVID
+          <input type="checkbox" name="doencas" id="covid">
+          </label>
+        </div>
+        <div>
+          <label>Anemia
+          <input type="checkbox" name="doencas" id="anemia">
+          </label>
+        </div>
+        <div>
+          <label>Hepatite
+          <input type="checkbox" name="doencas" id="hepatite">
+          </label>
+        </div>
+        <div>
+          <label>HIV
+          <input type="checkbox" name="doencas" id="hiv">
+          </label>
+        </div>
+        <div>
+          <label>Sopro Cardiáco
+          <input type="checkbox" name="doencas" id="soproCardiaco">
+          </label>
+        </div>
+        <div>
+          <label>Fobia/Medo
+          <input type="checkbox" name="doencas" id="medo">
+          </label>
+        </div>
+        <div>
+          <label>TOC
+          <input type="checkbox" name="doencas" id="toc">
+          </label>
+        </div>
+        <div>
+          <label>Hipocondria
+          <input type="checkbox" name="doencas" id="hipocondria">
+          </label>
+        </div>
+        <div>
+         
+          <label>Outros
+            <input type="checkbox" name="doencas" id="outros" onclick="testeDoencas()"/>
+          </label>
+          <label id="perguntaOutrasDoencas">Digite aqui a doença
+            <input type="text" name="outrasDoencas" id="outrasDoencas">
+          </label>
+        </div>
+  
+      </fieldset>
        <br><br> <button type="submit">Enviar</button>
-      </form>
+    </form>
   </section>
   <script src="/assets/js/menu-mobile.js"></script>
   <script src="/assets/js/search-cep.js"></script>

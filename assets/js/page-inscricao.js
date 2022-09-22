@@ -112,3 +112,18 @@ radioNaoServico.addEventListener('change', function(event) {
 });
 
 /* fim presta serviço na paroquia */
+
+
+function testeDoencas(){
+  const outrasDoencas = document.getElementById("outros")
+  const inputOutrasDoencas = document.getElementById("outrasDoencas")
+  const perguntaOutrasDoencas = document.getElementById("perguntaOutrasDoencas")
+
+  if(outrasDoencas.checked){
+  perguntaOutrasDoencas.style.display = 'block'
+  inputOutrasDoencas.style.display = 'inline'
+  }else{
+  inputOutrasDoencas.style.display = 'none'
+  perguntaOutrasDoencas.style.display = 'none'
+  }
+}

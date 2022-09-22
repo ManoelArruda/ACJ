@@ -10,3 +10,6 @@
 .servicoParoquia, #inputServicoParoquia{
   display: none;
 }
+#outrasDoencas, #perguntaOutrasDoencas{
+  display: none;
+}
