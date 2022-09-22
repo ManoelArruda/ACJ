@@ -113,6 +113,9 @@ radioNaoServico.addEventListener('change', function(event) {
 
 /* fim presta serviço na paroquia */
 
+/* ======================================================================================== */
+
+/* outras doenças */
 
 function testeDoencas(){
   const outrasDoencas = document.getElementById("outros")
@@ -120,10 +123,125 @@ function testeDoencas(){
   const perguntaOutrasDoencas = document.getElementById("perguntaOutrasDoencas")
 
   if(outrasDoencas.checked){
-  perguntaOutrasDoencas.style.display = 'block'
-  inputOutrasDoencas.style.display = 'inline'
+    perguntaOutrasDoencas.style.display = 'block'
+    inputOutrasDoencas.style.display = 'inline'
   }else{
-  inputOutrasDoencas.style.display = 'none'
-  perguntaOutrasDoencas.style.display = 'none'
+    inputOutrasDoencas.style.display = 'none'
+    perguntaOutrasDoencas.style.display = 'none'
   }
 }
+
+/* fim outras doenças */
+
+/* ======================================================================================== */
+
+/* vacina covid */
+
+function testeCovid(){
+  
+  const covidSim = document.getElementById("covidSim")
+  const covidNao = document.getElementById("covidNao")
+  const inputQtdDoses = document.getElementById("qtdDoses")
+  const dosesCovid = document.getElementById("dosesCovid")
+
+  if(covidSim.checked){
+    dosesCovid.style.display = 'block'
+    inputQtdDoses.style.display = 'inline'
+  }else if(covidNao.checked){
+    inputQtdDoses.style.display = 'none'
+    dosesCovid.style.display = 'none'
+  }
+}
+
+/* fim vacina covid */
+
+/* ======================================================================================== */
+
+/* medicacoes continuas */
+
+function medCont(){
+  
+  const medContSim = document.getElementById("medContSim")
+  const medContNao = document.getElementById("medContNao")
+  const inputMedCont = document.getElementById("inputMedCont")
+  const medContDoses = document.getElementById("medContDoses")
+
+  if(medContSim.checked){
+    medContDoses.style.display = 'block'
+    inputMedCont.style.display = 'inline'
+  }else if(medContNao.checked){
+    inputMedCont.style.display = 'none'
+    medContDoses.style.display = 'none'
+  }
+}
+
+/* fim medicacoes continuas */
+
+/* ======================================================================================== */
+
+/* medicacoes continuas */
+
+function tipoAlergia(){
+  
+  const alergiaSim = document.getElementById("alergiaSim")
+  const alergiaNao = document.getElementById("alergiaNao")
+  const inputAlergia = document.getElementById("inputAlergia")
+  const alergiaAQue = document.getElementById("alergiaAQue")
+
+  if(alergiaSim.checked){
+    alergiaAQue.style.display = 'block'
+    inputAlergia.style.display = 'inline'
+  }else if(alergiaNao.checked){
+    alergiaAQue.style.display = 'none'
+    inputAlergia.style.display = 'none'
+  }
+}
+
+/* fim medicacoes continuas */
+
+/* ======================================================================================== */
+
+/* problemas cardiacos */
+
+function problemaCardiaco(){
+  
+  const cardiacoSim = document.getElementById("cardiacoSim")
+  const cardiacoNao = document.getElementById("cardiacoNao")
+  const inputCardiaco = document.getElementById("inputCardiaco")
+  const perguntaCardiaco = document.getElementById("perguntaCardiaco")
+
+  if(cardiacoSim.checked){
+    perguntaCardiaco.style.display = 'block'
+    inputCardiaco.style.display = 'inline'
+  }else if(cardiacoNao.checked){
+    perguntaCardiaco.style.display = 'none'
+    inputCardiaco.style.display = 'none'
+  }
+}
+
+/* fim problemas cardiacos */
+
+/* ======================================================================================== */
+
+/* calendario vacinal */
+
+function calendarioVacinal(){
+  
+  const calendarioSim = document.getElementById("calendarioSim")
+  const calendarioNao = document.getElementById("calendarioNao")
+  const inputCalendario = document.getElementById("inputCalendario")
+  const perguntaCalendario = document.getElementById("perguntaCalendario")
+
+  if(calendarioNao.checked){
+    perguntaCalendario.style.display = 'block'
+    inputCalendario.style.display = 'inline'
+  }else if(calendarioSim.checked){
+    perguntaCalendario.style.display = 'none'
+    inputCalendario.style.display = 'none'
+  }
+}
+
+/* fim calendario vacinal */
+
+/* ======================================================================================== */
+

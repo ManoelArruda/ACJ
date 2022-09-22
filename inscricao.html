@@ -128,7 +128,7 @@
         <option value="São Sebastião">São Sebastião</option>
         <option value="santaTerezinha">Santa Terezinha</option>
         <option value="outraParoquia">Outra Paróquia</option>
-        <input type="text" name="outraParoquia" id="outraParoquia" placeholder="Digite o nome da sua Paróquia aqui." required />
+        <input type="text" name="outraParoquia" id="outraParoquia" placeholder="Digite o nome da sua Paróquia aqui." />
       </select>
       
       <label>Celular 1
@@ -362,14 +362,89 @@
         </div>
         <div>
          
-          <label>Outros
-            <input type="checkbox" name="doencas" id="outros" onclick="testeDoencas()"/>
-          </label>
-          <label id="perguntaOutrasDoencas">Digite aqui a doença
-            <input type="text" name="outrasDoencas" id="outrasDoencas">
-          </label>
+        <label>Outros
+          <input type="checkbox" name="doencas" id="outros" onclick="testeDoencas()"/>
+        </label>
+        <label id="perguntaOutrasDoencas">Digite aqui a doença
+          <input type="text" name="outrasDoencas" id="outrasDoencas">
+        </label>
         </div>
-  
+
+        <label>Tomou vacina para COVID?</label>
+        <label>Sim
+          <input type="radio" name="vacinaCovid" id="covidSim" onclick="testeCovid()" />
+        </label>
+        <label>Não
+          <input type="radio" name="vacinaCovid" id="covidNao" onclick="testeCovid()" />
+        </label><br>
+        <label id="dosesCovid">Quantas doses?
+          <input type="text" name="dosesCovid" id="qtdDoses">
+        </label>
+
+        <label>Faz algum tratamento psicológico</label>
+        <label>Sim
+          <input type="radio" name="tratamentoPsicologico" id="psicologicoSim" />
+        </label>
+        <label>Não
+          <input type="radio" name="tratamentoPsicologico" id="psicologicoNao" />
+        </label><br>
+
+        <label>Medicação de uso contínuo?</label>
+        <label>Sim
+          <input type="radio" name="medicacaoContinuo" id="medContSim" onclick="medCont()" />
+        </label>
+        <label>Não
+          <input type="radio" name="medicacaoContinuo" id="medContNao" onclick="medCont()" />
+        </label><br>
+        <label id="medContDoses">Qual(is)? Cite doses, horários e posologias.
+          <input type="text" name="medContDoses" id="inputMedCont">
+        </label>
+
+        <label>Tem alergia medicamentosa, alimentar, de contato, etc?</label>
+        <label>Sim
+          <input type="radio" name="alergia" id="alergiaSim" onclick="tipoAlergia()" />
+        </label>
+        <label>Não
+          <input type="radio" name="alergia" id="alergiaNao" onclick="tipoAlergia()" />
+        </label><br>
+        <label id="alergiaAQue">À que tem alergia?
+          <input type="text" name="inputAlergia" id="inputAlergia">
+        </label>
+        
+        <label>Quais os medicamentos que costuma tomar em casos de:</label>
+        <label>Dor de cabeça
+          <input type="text" name="dorCabeca" id="dorCabeca" />
+        </label>
+        <label>Dor muscular
+          <input type="text" name="dorMuscular" id="dorMuscular" />
+        </label>
+        <label>Outros
+          <input type="text" name="outrasDores" id="outrasDores" />
+        </label>
+
+        <label>Tem problema(s) cardíaco(s)?</label>
+        <label>Sim
+          <input type="radio" name="cardiaco" id="cardiacoSim" onclick="problemaCardiaco()" />
+        </label>
+        <label>Não
+          <input type="radio" name="cardiaco" id="cardiacoNao" onclick="problemaCardiaco()" />
+        </label><br>
+        <label id="perguntaCardiaco">Qual(is)?
+          <input type="text" name="inputCardiaco" id="inputCardiaco">
+        </label>
+
+        <label>Seu calendário vacinal está em dia (hepatite, tétano,etc)?</label>
+        <label>Sim
+          <input type="radio" name="calendario" id="calendarioSim" onclick="calendarioVacinal()" />
+        </label>
+        <label>Não
+          <input type="radio" name="calendario" id="calendarioNao" onclick="calendarioVacinal()" />
+        </label><br>
+        <label id="perguntaCalendario">Cite qual(is)?
+          <input type="text" name="inputCalendario" id="inputCalendario">
+        </label>
+
+        
       </fieldset>
        <br><br> <button type="submit">Enviar</button>
     </form>

@@ -13,3 +13,22 @@
 #outrasDoencas, #perguntaOutrasDoencas{
   display: none;
 }
+
+#qtdDoses, #dosesCovid{
+  display: none;
+}
+
+#medContDoses,#inputMedCont{
+  display: none;
+}
+
+#alergiaAQue, #inputAlergia{
+  display: none;
+}
+#perguntaCardiaco, #inputCardiaco{
+  display: none;
+}
+
+#perguntaCalendario, #inputCalendario{
+  display: none;
+}
