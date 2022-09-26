@@ -245,3 +245,88 @@ function calendarioVacinal(){
 
 /* ======================================================================================== */
 
+/* deficiencia fisica */
+
+function deficienciaFisica(){
+  
+  const defFisicaSim = document.getElementById("defFisicaSim")
+  const defFisicaNao = document.getElementById("defFisicaNao")
+  const inputDefFisica = document.getElementById("inputDefFisica")
+  const perguntaDefFisica = document.getElementById("perguntaDefFisica")
+
+  if(defFisicaSim.checked){
+    perguntaDefFisica.style.display = 'block'
+    inputDefFisica.style.display = 'inline'
+  }else if(defFisicaNao.checked){
+    perguntaDefFisica.style.display = 'none'
+    inputDefFisica.style.display = 'none'
+  }
+}
+
+/* fim deficiencia fisica */
+
+/* ======================================================================================== */
+
+/* recursos */
+
+function recursos(){
+  const checkboxOutrosRecursos = document.getElementById("outrosRecursos")
+  const inputOutrosRecursos = document.getElementById("inputOutrosRecursos")
+  const perguntaOutrosRecursos = document.getElementById("perguntaOutrosRecursos")
+
+  if(checkboxOutrosRecursos.checked){
+    perguntaOutrosRecursos.style.display = 'block'
+    inputOutrosRecursos.style.display = 'inline'
+  }else{
+    perguntaOutrosRecursos.style.display = 'none'
+    inputOutrosRecursos.style.display = 'none'
+  }
+}
+
+/* fim recursos */
+
+/* ======================================================================================== */
+
+/* fumante */
+
+function fumantes(){
+  
+  const fumanteSim = document.getElementById("fumanteSim")
+  const fumanteNao = document.getElementById("fumanteNao")
+  const inputFumante = document.getElementById("inputFumante")
+  const perguntaFumante = document.getElementById("perguntaFumante")
+
+  if(fumanteSim.checked){
+    perguntaFumante.style.display = 'block'
+    inputFumante.style.display = 'inline'
+  }else if(fumanteNao.checked){
+    perguntaFumante.style.display = 'none'
+    inputFumante.style.display = 'none'
+  }
+}
+
+/* fim fumante */
+
+/* ======================================================================================== */
+
+/* cirugia */
+
+function tipoCirugias(){
+  
+  const cirugiaSim = document.getElementById("cirurgiaSim")
+  const cirugiaNao = document.getElementById("cirurgiaNao")
+  const inputCirugia = document.getElementById("inputCirurgia")
+  const perguntaCirugia = document.getElementById("perguntaCirurgia")
+
+  if(cirugiaSim.checked){
+    perguntaCirugia.style.display = 'block'
+    inputCirugia.style.display = 'inline'
+  }else if(cirugiaNao.checked){
+    perguntaCirugia.style.display = 'none'
+    inputCirugia.style.display = 'none'
+  }
+}
+
+/* fim cirugia */
+
+/* ======================================================================================== */

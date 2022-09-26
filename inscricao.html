@@ -444,7 +444,68 @@
           <input type="text" name="inputCalendario" id="inputCalendario">
         </label>
 
+        <label>Possui alguma deficiencia física ou necessidade especial?</label>
+        <label>Sim
+          <input type="radio" name="defFisica" id="defFisicaSim" onclick="deficienciaFisica()" />
+        </label>
+        <label>Não
+          <input type="radio" name="defFisica" id="defFisicaNao" onclick="deficienciaFisica()" />
+        </label><br>
+        <label id="perguntaDefFisica">Cite qual(is)?
+          <input type="text" name="inputDefFisica" id="inputDefFisica">
+        </label>
         
+        <label>Utiliza algum desses recursos?</label>
+        <div>
+          <label>Marcapasso
+          <input type="checkbox" name="recurso" id="marcapasso">
+          </label>
+        </div>
+        <div>
+          <label>Prótese
+          <input type="checkbox" name="recurso" id="protese">
+          </label>
+        </div>
+        <div>
+          <label>Stender
+          <input type="checkbox" name="recurso" id="stender">
+          </label>
+        </div>
+        <div>
+          <label>Aparelho Auditivo
+          <input type="checkbox" name="recurso" id="aparelhoAuditivo">
+          </label>
+        </div>
+        <div>
+        <label>Outros
+          <input type="checkbox" name="recurso" id="outrosRecursos" onclick="recursos()"/>
+        </label>
+        <label id="perguntaOutrosRecursos">Cite qual(is):
+          <input type="text" name="inputOutrosRecursos" id="inputOutrosRecursos">
+        </label>
+        </div>
+
+        <label>É fumante?</label>
+        <label>Sim
+          <input type="radio" name="fumante" id="fumanteSim" onclick="fumantes()" />
+        </label>
+        <label>Não
+          <input type="radio" name="fumante" id="fumanteNao" onclick="fumantes()" />
+        </label><br>
+        <label id="perguntaFumante">Cite qual(is)?
+          <input type="text" name="inputFumante" id="inputFumante">
+        </label>
+
+        <label>Já se submeteu a alguma cirurgia?</label>
+        <label>Sim
+          <input type="radio" name="cirurgia" id="cirurgiaSim" onclick="tipoCirugias()" />
+        </label>
+        <label>Não
+          <input type="radio" name="cirurgia" id="cirurgiaNao" onclick="tipoCirugias()" />
+        </label><br>
+        <label id="perguntaCirurgia">Cite qual(is)?
+          <input type="text" name="inputCirurgia" id="inputCirurgia">
+        </label>
       </fieldset>
        <br><br> <button type="submit">Enviar</button>
     </form>

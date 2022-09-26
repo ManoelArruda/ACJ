@@ -32,3 +32,19 @@
 #perguntaCalendario, #inputCalendario{
   display: none;
 }
+
+#perguntaDefFisica, #inputDefFisica{
+  display: none;
+}
+
+#perguntaOutrosRecursos, #inputOutrosRecursos{
+  display: none;
+}
+
+#perguntaFumante, #inputFumante{
+  display: none;
+}
+
+#inputCirurgia, #perguntaCirurgia{
+  display: none;
+}
