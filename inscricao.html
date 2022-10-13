@@ -60,7 +60,7 @@
     </div>
   </header>
   <section>
-    <h1 id="titulo">Formulário de Inscrição</h1>
+    <h1 id="tituloFormulario">Formulário de Inscrição</h1>
 
     <form id="formulario" action="" method="post" autocomplete="on">
       <label>Nome Completo:
@@ -506,7 +506,53 @@
         <label id="perguntaCirurgia">Cite qual(is)?
           <input type="text" name="inputCirurgia" id="inputCirurgia">
         </label>
+
+        <label>Tem restrição alimentar?</label>
+        <label>Sim
+          <input type="radio" name="restAlimentar" id="restAlimentarSim" />
+        </label>
+        <label>Não
+          <input type="radio" name="restAlimentar" id="restAlimentarNao" />
+        </label><br>
+
+        <label>PARA AS MULHERES</label>
+        <label>Você tem a possibilidade de estar grávida?</label>
+        <label>Sim
+          <input type="radio" name="gravida" id="gravidaSim" />
+        </label>
+        <label>Não
+          <input type="radio" name="gravida" id="gravidaNao" />
+        </label><br>
+
+        <label>EM CASO DE EMERGENCIA ENTRE EM CONTATO</label>
+        <label>Nome Completo
+          <input type="text" name="emergencia1" id="nomeEmergencia1" />
+        </label>
+        <label>Telefone
+          <input type="number" name="emergencia1" id="telEmergencia1">
+        </label>
+        <label>Relação com o campista / Grau parentesco
+          <input type="text" name="emergencia1" id="grauParentescoEmergencia1" />
+        </label>
+
+        <label>Nome Completo
+          <input type="text" name="emergencia2" id="nomeEmergencia2" />
+        </label>
+        <label>Telefone
+          <input type="number" name="emergencia2" id="telEmergencia2">
+        </label>
+        <label>Relação com o campista / Grau parentesco
+          <input type="text" name="emergencia2" id="grauParentescoEmergencia2" />
+        </label>
+
       </fieldset>
+
+      <label>
+        <input type="checkbox" name="termoInformacoes" id="termoInformacoes" required />
+        Concordo que as informações contidas nesse questionário são sigilosas e atestam minhas reais condições de saúde. Sendo assim, declaro ter conhecimento que qualquer omissão ou falha em informar a verdade poderão prejudicar eventuais atendimentos médicos durante o acampamento.
+      
+      </label>
+
        <br><br> <button type="submit">Enviar</button>
     </form>
   </section>
